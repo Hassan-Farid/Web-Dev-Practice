@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice 5</title>
+</head>
+
+<body>
+    <input placeholder="Type anything here" class="input-placeholder" />
+    <p class="input-text">Nothing has been written yet</p>
+
+    <script>
+        const inputElement = document.querySelector(".input-placeholder");
+        const textElement = document.querySelector(".input-text");
+
+        //Adds the value stroked on keyboard to the paragraph text field
+        inputElement.addEventListener("keyup", function() {
+            textElement.innerText = inputElement.value;
+        })
+    </script>
+</body>
+
+</html>

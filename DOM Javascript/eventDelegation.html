@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice 7</title>
+</head>
+
+<body>
+    <p class="counter">0</p>
+    <div class="button-container">
+        <button value='1' class="numeric-button">Add 1</button>
+        <button value='2' class="numeric-button">Add 2</button>
+        <button value='3' class="numeric-button">Add 3</button>
+        <button value='4' class="numeric-button">Add 4</button>
+        <button value='5' class="numeric-button">Add 5</button>
+    </div>
+
+    <script>
+        const counter = document.querySelector(".counter");
+        const container = document.querySelector(".button-container");
+        container.addEventListener("click", function() {
+            counter.innerText = Number(event.target.value) + Number(counter.innerText);
+        })
+    </script>
+</body>
+
+</html>
